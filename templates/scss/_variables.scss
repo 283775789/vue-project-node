@@ -1,0 +1,84 @@
+/** ---------------------------------------------------------------------
+ ** 描述：scss模板
+ ** --------------------------------------------------------------------- */
+
+/* ------------------------------ 全局配置 ------------------------------ */
+/* 应用类型 */
+$app-type: web; // [前台样式: web, 后台样式: admin, 移动端样式: mobile]
+
+/* ------------------------------ 颜色体系 ------------------------------ */
+/* 主题色 */
+$color-main: #26a8ff; // 主色
+$color-main-hover: hover($color-main); // 主色:滑过
+$color-main-active: active($color-main); // 主色:激活
+$color-auxiliary: #6ec940; // 辅色
+$color-auxiliary-hover: hover($color-auxiliary); // 辅色:滑过
+$color-auxiliary-active: active($color-auxiliary); // 辅色:激活
+$color-weaking: #fff; // 弱化色
+
+/* vi色 */
+$color-success:#78cf70; // 成功
+$color-warning:#ffb555; // 警告
+$color-error:#ff6c60; // 错误
+
+/* 背景色 */
+$color-bg-body:#f5f5f5; // 页面背景
+$color-bg-footer: #afb9c9; // 页脚背景
+$color-bg-disabled: #eee; // 禁用背景
+
+/* 文本色 */
+$color-text-main:#333; // 主文本
+$color-text-auxiliary:#666; // 辅助文本
+$color-text-weaking:#999; // 弱化文本
+$color-text-disabled:#ccc; // 禁用文本
+$color-text-highlight:#479025; // 高亮文本
+$color-text-error:#f00; // 错误文本
+$color-text-inverse: #fff; // 反转文本
+$color-text-link:$color-main; // 链接色
+$color-text-link-hover: hover($color-text-link); // 链接滑过色
+$color-text-placeholder: $color-text-weaking; // 占位文本
+
+/* 边框色 */
+$color-border-main:#ccc; // 主边框
+$color-border-auxiliary:#ddd; // 辅边框
+$color-border-disabled:#eee; // 禁用边框
+$color-border-weaking:#eee; // 弱化边框
+
+/* ------------------------------ 字体体系 ------------------------------ */
+/* 字体 */
+$font-family-default: "Helvetica Neue", "Microsoft YaHei", "\5b8b\4f53", Arial, Helvetica, sans-serif; // 字体
+
+/* 字体尺寸 */
+$font-size-default: 14px; // 默认字号
+$font-size-small: $font-size-default - 2px; // 小字号
+$font-size-medium: $font-size-default + 2px; // 中字号
+$font-size-large: $font-size-default + 6px; // 大字号
+
+/* ------------------------------ 间距体系 ------------------------------ */
+/* 间距步长 */
+$spacing-step: 5px; // 间距步长
+
+/* 外边距 */
+$margin-step: $spacing-step; // 外边距步长
+$margin-tiny: $margin-step * 2; // 最小外边距
+$margin-small: $margin-step * 3; // 小外边距
+$margin-medium: $margin-step * 4; // 中外边距
+$margin-large: $margin-step * 6; // 大外边距
+$margin-huge: $margin-step * 8; // 超大外边距
+
+/* 内边距 */
+$padding-step: $spacing-step; // 内边距步长
+$padding-tiny: $padding-step * 2; // 最小内边距
+$padding-small: $padding-step * 3; // 小内边距
+$padding-medium: $padding-step * 4; // 中内边距
+$padding-large: $padding-step * 6; // 在内边距
+$padding-huge: $padding-step * 8; // 超大内边距
+
+/* ------------------------------ 响应式体系(pc优先) ------------------------------ */
+/* 栅格 */
+$grid-columns: 12; // 栅格数量
+$grid-gutter-width: $padding-small * 2; // 栅格宽度
+
+/* ------------------------------ 过渡效果 ------------------------------ */
+/* 过渡时间 */
+$time: .12s; // 过渡时间
