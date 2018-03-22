@@ -9,7 +9,7 @@ router.get('/', function (req, res, next) {
 })
 
 router.get('/project', function (req, res, next) {
-  fs.readFile('template/scss/_variables.scss', 'utf-8', (e, data) => {
+  fs.readFile('templates/scss/_variables.scss', 'utf-8', (e, data) => {
     const result = scss.compileTemplate(data)
     res.send(JSON.stringify(result))
   })
