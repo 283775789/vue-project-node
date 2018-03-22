@@ -15,12 +15,19 @@ const compileModule = function (str) {
 
 // 编译SASS变量组
 const compileGroup = function (str) {
-  const groupReg = /\/\*\s+([^-]*)\s+\*\//
+  const groupReg = /\/\*\s+([^-]*)\s*\{(.*)}\s+\*\//
   const obj = {}
 
   if (groupReg.test(str)) {
     const matches = groupReg.exec(str)
     obj.name = matches[1]
+    obj.type = matches[2]
+
+    if (/\+$/.test(obj.type)) {
+      obj.type = obj.type.replace(/\+$/, '')
+      obj.addable = true
+    }
+
     obj.children = []
     return obj
   }
@@ -38,6 +45,11 @@ const compileVar = function (str) {
     obj.varName = matches[1]
     obj.value = matches[2]
     obj.name = matches[3]
+
+    if (/^\s*\[.*]\s*$/.test(matches[3])) {
+      obj.values = matches[3].replace(/([[\]\s])/g, '').split(',')
+    }
+
     return obj
   }
 
