@@ -3,6 +3,7 @@ const router = express.Router()
 const path = require('path')
 const fs = require('fs')
 const scss = require('../handler/scss')
+const markdown = require('../handler/markdown')
 
 router.get('/', function (req, res, next) {
   res.sendfile(path.join(__dirname, '../www/html/main.html'))
@@ -18,8 +19,8 @@ router.get('/getScssVars', function (req, res, next) {
 
 // 处理所有markdown文件
 router.get('/getMarkdown', function (req, res, next) {
-  fs.readFile(`docs/${req.query.name}.md`, 'utf-8', (e, data) => {
-    res.send(data)
+  fs.readFile(`examples/docs/${req.query.name}.md`, 'utf-8', (e, data) => {
+    res.send(markdown(data))
   })
 })
 
