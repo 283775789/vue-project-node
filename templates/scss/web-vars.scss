@@ -45,6 +45,9 @@ $color-border-disabled:#eee; // 禁用边框
 $color-border-weaking:#eee; // 弱化边框
 
 /* ------------------------------ 字体体系 ------------------------------ */
+/* 字体{NoChange} */
+$font-family-default: "Helvetica Neue", "Microsoft YaHei", "\5b8b\4f53", Arial, Helvetica, sans-serif; // 字体
+
 /* 字体尺寸{FontSize+} */
 $font-size-small: 12px; // 小字号
 $font-size-default: 14px; // 默认字号
@@ -52,6 +55,9 @@ $font-size-medium: 16px; // 中字号
 $font-size-large: 20px; // 大字号
 
 /* ------------------------------ 间距体系 ------------------------------ */
+/* 行高{NoChange} */
+$line-height-default: 1.5; // 行高
+
 /* 外边距{Spacing+} */
 $spacing-step: 5px; // 间距步长
 $spacing-tiny: 10px; // 超小间距
@@ -61,6 +67,10 @@ $spacing-large: 30px; // 大间距
 $spacing-huge: 40px; // 超大间距
 
 /* ------------------------------ 响应式体系 ------------------------------ */
+/* 响应式断点{NoChange} */
+$media-breakpoints: ( pc: 1200px, lpad: 992px, pad: 768px, lphone: 554px, phone: 0); // 媒体查询断点
+$container-widths: ( pc:1200px,  lpad:960px,  pad:auto,  lphone:auto,  phone:auto); // 主容器宽度
+
 /* 栅格{String} */
 $grid-columns: 12; // 栅格数量
 $grid-gutter-width: 20px; // 栅格宽度

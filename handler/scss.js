@@ -40,7 +40,7 @@ const compileGroup = function (str) {
 
 // 编译SASS变量对象
 const compileVar = function (str) {
-  const varReg = /(\$.*):\s*(.*);\s*\/?\/?\s*(.*)/
+  const varReg = /(\$.*?):\s*(.*);\s*\/?\/?\s*(.*)/
   const obj = {}
 
   if (varReg.test(str)) {
