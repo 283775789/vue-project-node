@@ -15,17 +15,20 @@ const compileModule = function (str) {
 
 // 编译SASS变量组
 const compileGroup = function (str) {
-  const groupReg = /\/\*\s+([^-]*)\s*\{(.*)}\s+\*\//
+  const groupReg = /\/\*\s+([^-{}]+)\s*\{?(.*?)}?\s+\*\//
   const obj = {}
 
   if (groupReg.test(str)) {
     const matches = groupReg.exec(str)
     obj.name = matches[1]
-    obj.type = matches[2]
 
-    if (/\+$/.test(obj.type)) {
-      obj.type = obj.type.replace(/\+$/, '')
-      obj.addable = true
+    if (matches[2]) {
+      obj.type = matches[2]
+
+      if (/\+$/.test(obj.type)) {
+        obj.type = obj.type.replace(/\+$/, '')
+        obj.addable = true
+      }
     }
 
     obj.children = []
@@ -37,7 +40,7 @@ const compileGroup = function (str) {
 
 // 编译SASS变量对象
 const compileVar = function (str) {
-  const varReg = /(\$.*):\s*(.*);\s*\/\/\s*(.*)/
+  const varReg = /(\$.*):\s*(.*);\s*\/?\/?\s*(.*)/
   const obj = {}
 
   if (varReg.test(str)) {
@@ -109,7 +112,26 @@ const compileVars = function (data) {
   return vars
 }
 
+// 反编译json到scss
+const createScss = function (data) {
+  let content = ''
+
+  data.forEach((module, n) => {
+    content += `${n === 0 ? '' : '\n'}/* ------------------------------ ${module.name} ------------------------------ */`
+    module.children.forEach(group => {
+      const type = group.type ? `{${group.type}${group.addable ? '+' : ''}}` : ''
+      content += `\n/* ${group.name}${type} */\n`
+      group.children.forEach(scssVar => {
+        content += `${scssVar.varName}: ${scssVar.value}; // ${scssVar.name}\n`
+      })
+    })
+  })
+
+  return content
+}
+
 module.exports = {
   compileTemplate,
-  compileVars
+  compileVars,
+  createScss
 }

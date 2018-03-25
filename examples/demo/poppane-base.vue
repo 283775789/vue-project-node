@@ -6,3 +6,14 @@
     </tw-poppane>
   </div>
 </template>
+
+<script>
+  export default {
+    name: 'abc',
+    data () {
+      return {
+        key: '333'
+      }
+    }
+  }
+</script>
