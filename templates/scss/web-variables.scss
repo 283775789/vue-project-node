@@ -80,7 +80,7 @@ $grid-gutter-width: 20px; // 栅格宽度
 $time: .12s; // 过渡时间
 
 /* ------------------------------ 组件变量 ------------------------------ */
-/* vars */
+/* markdown */
 $markdown-px: $spacing-medium; // 容器水平内边距
 $markdown-color: $color-text-auxiliary; // 默认文字颜色
 $markdown-title-color: $color-text-auxiliary; // 标题文字颜色
@@ -98,42 +98,40 @@ $markdown-table-pd: $spacing-tiny; // 表格单元格内边距
 $markdown-table-border-color: $color-border-main; // 表格边框色
 
 /* 箭头 */
-$arrow-color:#999;
+$arrow-color:#999; // 箭头颜色
 
 /* 主体 */
-$content-bg: #fff;
+$content-bg: #fff; // 主体背景
 
-/* 按钮 */
-$btn-min-width: 80px;
-$btn-default-height: 30px;
-$btn-px: $spacing-small;
-$btn-font-size: $font-size-default;
-$btn-border-radius: 3px;
-$btn-main-bg: $color-main;
-$btn-main-bg-hover: $color-main-hover;
-$btn-main-color: $color-text-inverse;
-$btn-auxiliary-bg: $color-auxiliary;
-$btn-auxiliary-bg-hover: $color-auxiliary-hover;
-$btn-auxiliary-color: $color-text-inverse;
-$btn-weaking-bg: $color-weaking;
-$btn-weaking-border-color: $color-border-main;
-$btn-weaking-color: $color-text-main;
-$btn-large-height: $btn-default-height + 6px;
-$btn-huge-height: $btn-default-height + 10px;
+/* 按钮{tw-button-base} */
+$btn-min-width: 80px; // 按钮最小宽度
+$btn-height: 30px; // 按钮默认高度
+$btn-px: $spacing-small; // 按钮水平内边距
+$btn-font-size: $font-size-default; // 按钮字体大小
+$btn-border-radius: 3px; // 按钮边框
+$btn-main-bg: $color-main; // 主按钮背景
+$btn-main-bg-hover: $color-main-hover; // 主按钮背景滑过色
+$btn-main-color: $color-text-inverse; // 主按钮文本色
+$btn-auxiliary-bg: $color-auxiliary; // 辅助按钮背景
+$btn-auxiliary-bg-hover: $color-auxiliary-hover; // 辅助按钮背景色
+$btn-auxiliary-color: $color-text-inverse; // 辅助按钮文本色
+$btn-weaking-bg: $color-weaking; // 弱化按钮背景
+$btn-weaking-border-color: $color-border-main; // 弱化按钮背景色
+$btn-weaking-color: $color-text-main; // 弱化按钮文本色
 
 /* 表单控件 */
-$control-width: 160px;
-$control-height: 30px;
-$control-padding: $spacing-step;
-$control-font-size: $font-size-default;
-$control-color: $color-text-auxiliary;
-$control-radius: 3px;
-$control-border-color: $color-border-main;
-$control-focus-border-color: $color-main;
-$control-label-space: $spacing-step;
-$optbox-marker-color: $color-border-main;
-$optbox-marker-checked-color: $color-main;
-$optbox-checkbox-checked-color: $color-text-inverse;
+$control-width: 160px; // 控件宽度
+$control-height: 30px; // 控件高度
+$control-padding: $spacing-step; // 控件内边距
+$control-font-size: $font-size-default; // 控件字体尺寸
+$control-color: $color-text-auxiliary; // 控件文本色
+$control-border-color: $color-border-main; // 控件边框颜色
+$control-focus-border-color: $color-main; // 控件选中边框色
+$control-radius: 3px; // 控件边框圆色
+$control-label-space: $spacing-step; // 控件标签右边距
+$optbox-marker-color: $color-border-main; // 选项框标记色
+$optbox-marker-checked-color: $color-main; // 选项框选中色
+$optbox-checkbox-checked-color: $color-text-inverse; // 多选框对勾色
 
 /* 页脚 */
 $footer-height: 50px;

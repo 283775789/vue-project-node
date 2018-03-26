@@ -1,4 +1,4 @@
-<template>
+<template group="功能" type="下拉面板" name="基本下拉面板">
   <div>
     <a class="tw-popswitch js-popbtn"><span>下拉菜单</span></a>
     <tw-poppane class="js-position" switch=".js-popbtn">
@@ -9,11 +9,6 @@
 
 <script>
   export default {
-    name: 'abc',
-    data () {
-      return {
-        key: '333'
-      }
-    }
+    name: 'twPoppaneBase'
   }
 </script>

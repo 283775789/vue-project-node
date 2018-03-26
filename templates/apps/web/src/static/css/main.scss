@@ -10,7 +10,6 @@
 
 // 变量与公用scss
 // ------------------------------------------------------------
-@import "teewon/base/functions";
 @import "teewon/base/variables";
 @import "teewon/mixins/utils";
 @import "teewon/mixins/responsive";
@@ -27,8 +26,9 @@
 @import "teewon/triangle";
 @import "teewon/arrow";
 @import "teewon/fonts";
-@import "teewon/block";
 @import "teewon/button";
+@import "teewon/widget";
+@import "teewon/markdown";
 
 // 布局组件(teewon)
 // ------------------------------------------------------------

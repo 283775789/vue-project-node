@@ -84,6 +84,11 @@ a {
   cursor: pointer;
 }
 
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
 // 重置表单元素点位符颜色
 // stylelint-disable
 input::-webkit-input-placeholder,
