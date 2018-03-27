@@ -13,7 +13,7 @@ fs.readdir(examplesPath, function (e, files) {
     const name = nameReg.exec(content)[1]
     const demoObj = {
       name: name,
-      tag: 'tw-' + filename
+      tag: 'tw-' + filename.replace(/.vue$/, '')
     }
 
     if (group[groupName]) {
@@ -25,6 +25,7 @@ fs.readdir(examplesPath, function (e, files) {
     } else {
       group[groupName] = {}
       group[groupName][typeName] = {
+        name: typeName,
         demos: [demoObj]
       }
     }
