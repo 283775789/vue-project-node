@@ -66,6 +66,21 @@ $spacing-medium: 20px; // 中间距
 $spacing-large: 30px; // 大间距
 $spacing-huge: 40px; // 超大间距
 
+/* ------------------------------ 尺寸体系 ------------------------------ */
+/* 控件高度{String+} */
+$ctr-height-step: 6px; // 高度步长
+$ctr-height-default: 30px; // 默认高度
+$ctr-height-small: 24px; // 小高度
+$ctr-height-medium: 36px; // 中高度
+$ctr-height-large: 42px; // 大高度
+
+/* 控件宽度{String+} */
+$ctr-width-step: 40px; // 宽度步长
+$ctr-width-default: 160px; // 默认高度
+$ctr-width-small: 120px; // 小宽度
+$ctr-width-medium: 200px; // 中宽度
+$ctr-width-large: 240px; // 大宽度
+
 /* ------------------------------ 响应式体系 ------------------------------ */
 /* 响应式断点{NoChange} */
 $media-breakpoints: ( pc: 1200px, lpad: 992px, pad: 768px, lphone: 554px, phone: 0); // 媒体查询断点

@@ -4,7 +4,8 @@
   "description": "teewon-node",
   "main": "index.js",
   "scripts": {
-    "ui": "gulp watch"
+    "ui": "gulp watch",
+    "git": "git add -A && git commit -m '新提交' && git push"
   },
   "author": "",
   "license": "SEE LICENSE IN <teewon-license.txt>",

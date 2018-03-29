@@ -66,6 +66,21 @@ $spacing-medium: 20px; // 中间距
 $spacing-large: 30px; // 大间距
 $spacing-huge: 40px; // 超大间距
 
+/* ------------------------------ 尺寸体系 ------------------------------ */
+/* 控件高度{String+} */
+$ctr-height-step: 6px; // 高度步长
+$ctr-height-default: 30px; // 默认高度
+$ctr-height-small: 24px; // 小高度
+$ctr-height-medium: 36px; // 中高度
+$ctr-height-large: 42px; // 大高度
+
+/* 控件宽度{String+} */
+$ctr-width-step: 40px; // 宽度步长
+$ctr-width-default: 160px; // 默认高度
+$ctr-width-small: 120px; // 小宽度
+$ctr-width-medium: 200px; // 中宽度
+$ctr-width-large: 240px; // 大宽度
+
 /* ------------------------------ 响应式体系 ------------------------------ */
 /* 响应式断点{NoChange} */
 $media-breakpoints: ( pc: 1200px, lpad: 992px, pad: 768px, lphone: 554px, phone: 0); // 媒体查询断点
@@ -103,7 +118,7 @@ $arrow-color:#999; // 箭头颜色
 /* 主体 */
 $content-bg: #fff; // 主体背景
 
-/* 按钮{tw-button-base} */
+/* 按钮 */
 $btn-min-width: 80px; // 按钮最小宽度
 $btn-height: 30px; // 按钮默认高度
 $btn-px: $spacing-small; // 按钮水平内边距
@@ -120,14 +135,20 @@ $btn-weaking-border-color: $color-border-main; // 弱化按钮背景色
 $btn-weaking-color: $color-text-main; // 弱化按钮文本色
 
 /* 表单控件 */
-$control-width: 160px; // 控件宽度
-$control-height: 30px; // 控件高度
+$control-width: $ctr-width-default; // 默认控件宽度
+$control-width-small: $ctr-width-small; // 小控件宽度
+$control-width-large: $ctr-width-large; // 大控件宽度
+$control-height: $ctr-height-default; // 默认控件高度
+$control-height-small: $ctr-height-small; // 小控件高度
+$control-height-large: $ctr-height-large; // 大控件高度
 $control-padding: $spacing-step; // 控件内边距
 $control-font-size: $font-size-default; // 控件字体尺寸
+$control-font-size-small: $font-size-small; // 小控件字体尺寸
+$control-font-size-large: $font-size-large; // 大控件字体尺寸
 $control-color: $color-text-auxiliary; // 控件文本色
 $control-border-color: $color-border-main; // 控件边框颜色
 $control-focus-border-color: $color-main; // 控件选中边框色
-$control-radius: 3px; // 控件边框圆色
+$control-radius: 3px; // 控件边框圆角
 $control-label-space: $spacing-step; // 控件标签右边距
 $optbox-marker-color: $color-border-main; // 选项框标记色
 $optbox-marker-checked-color: $color-main; // 选项框选中色
@@ -141,10 +162,10 @@ $footer-color:$color-text-inverse;
 $footer-bg: $color-bg-footer;
 
 /* 表单 */
-$form-line-height: 30px;
-$form-mb: $spacing-medium;
-$form-item-pb: $spacing-medium;
-$form-item-pl: $spacing-medium;
+$form-mb: $spacing-medium; // 表单下边距
+$form-size: $font-size-default; // 表单字号
+$form-item-pb: $spacing-medium; // 表单项下边距
+$form-label-pl: $spacing-medium; // 表单项标签左边距
 
 /* 头部 */
 $header-height: 60px;
@@ -163,6 +184,25 @@ $header-navlink-hover-color: $color-text-inverse;
 $header-navlink-active-bg: $color-main-active;
 $header-navlink-active-color: $color-text-inverse;
 $header-navlink-px: $spacing-small;
+
+/* 列表 */
+$select-height: $ctr-height-default; // 默认选择框高度
+$select-height-small: $ctr-height-small; // 小选择框高度
+$select-height-large: $ctr-height-large; // 大选择框高度
+$select-max-height: 300px; // 选项框最大高度
+$select-padding-right: $spacing-tiny; // 选择框右内边距
+$select-triangle-color: $color-border-main; // 选择框三角形颜色
+$select-list-border-color: $color-border-main; // 选项列表边框色
+$select-list-item-line-height: $ctr-height-default; // 选项列表项行高
+$select-list-item-px: $spacing-tiny; // 选项水平内边距
+$select-list-item-hover-bg: $color-main-hover; // 选项滑过背景
+$select-list-item-hover-color: $color-text-inverse; // 选项滑过字体颜色
+$select-list-item-selected-bg: $color-main-hover; // 选项选中背景
+$select-list-item-selected-color: $color-text-inverse; // 选项选中背景
+$select-list-item-selected-ico-size: $font-size-medium; // 选中图标大小
+$select-list-item-selected-ico-color: $color-auxiliary; // 选中图标颜色
+$select-group-name-height: $ctr-height-small; // 选项组名高度
+$select-group-name-color: $color-text-weaking; // 选项组名颜色
 
 /* 多栏布局 */
 $multicol-content-padding:$spacing-medium;
