@@ -1,9 +1,13 @@
 // 注册通用的全局组件
 import Vue from 'vue'
 import PoppaneBase from '@/examples/demo/poppane-base'
+import ButtonBase from '@/examples/demo/button-base'
+import DesignGuid from '@/examples/docs/design'
 
 const components = [
-  PoppaneBase
+  PoppaneBase,
+  ButtonBase,
+  DesignGuid
 ]
 
 components.forEach(function (component) {
