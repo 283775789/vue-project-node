@@ -17,6 +17,7 @@ app.use(bodyParser.json())
 app.use('/js', express.static(path.join(__dirname, 'www/js')))
 app.use('/static', express.static(path.join(__dirname, 'www/static')))
 app.use('/examples/config', express.static(path.join(__dirname, 'examples/config')))
+app.use('/examples', express.static(path.join(__dirname, 'examples')))
 
 app.use('/', router)
 

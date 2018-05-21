@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="scssVars.length>0">
     <h2>颜色体系</h2>
     <table>
       <thead>
@@ -231,6 +231,7 @@
       </tbody>
     </table>
     <h2>间距体系</h2>
+    <p>如果信息之间关联性越高，它们之间的距离就应该越接近，也越像一个视觉单元；反之，则它们的距离就应该越远，也越像多个视觉单元。亲密性的根本目的是实现组织性，让用户对页面结构和信息层次一目了然。</p>
     <table>
       <thead>
         <tr>
@@ -252,7 +253,7 @@
         </tr>
         <tr>
           <td rowspan="6">间距</td>
-          <td rowspan="6">如果信息之间关联性越高，它们之间的距离就应该越接近，也越像一个视觉单元；反之，则它们的距离就应该越远，也越像多个视觉单元。亲密性的根本目的是实现组织性，让用户对页面结构和信息层次一目了然。</td>
+          <td rowspan="6">划分信息层级</td>
           <td>间距步长(5px)</td>
           <td>用于确定整个系统的间距最小跳跃单位</td>
         </tr>
@@ -355,7 +356,7 @@
       </tbody>
     </table>
     <h2>响应式体系</h2>
-    <div>响应式布局，从用户体验与业界主流应用来说，并不推荐同时响应PC,Pad,phone三端的设计模式，但框架体系依然保留了bootstrap的响应式体系，但为了更自然的书写css，pc-web端摒弃了Bootstrap的移动端优先原则，而改为了PC端优先。</div>
+    <div>响应式布局，从用户体验与业界主流应用来说，并不推荐同时响应PC,Pad,phone三端的设计模式，框架体系依然保留了bootstrap的响应式体系，但为了更自然的书写css，pc-web端摒弃了Bootstrap的移动端优先原则，而改为了PC端优先。</div>
     <table>
       <thead>
         <tr>
@@ -370,7 +371,7 @@
           <td rowspan="5">PC-Web端系统</td>
           <td rowspan="5">PC端优先</td>
           <td>默认(pc)</td>
-          <td>默认所有的css都为pc端优先</td>
+          <td>所有默认的css都为pc端优先</td>
         </tr>
         <tr>
           <td>pad横屏(lpad)</td>
@@ -392,7 +393,7 @@
           <td rowspan="5">移动App</td>
           <td rowspan="5">移动端优先</td>
           <td>默认(phone)</td>
-          <td>默认所有的css都为移动端优先</td>
+          <td>所有默认的css都为移动端优先</td>
         </tr>
         <tr>
           <td>手机横屏(lphone)</td>
@@ -437,9 +438,13 @@
     methods: {
       changeScssVars () {
         const vm = this
+
         vm.axios.post('http://localhost:83/css', vm.scssVars).then(function (responed) {
+          debugger
           vm.styleEl.textContent = responed.data
+          debugger
         }).catch(function (error) {
+          debugger
           console.log(error)
         })
       }
