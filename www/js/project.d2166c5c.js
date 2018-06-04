@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 113:
+/***/ 114:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -470,6 +470,24 @@ webpackJsonp([2],{
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tw_vue_markdown_markdown__ = __webpack_require__(41);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2143,15 +2161,15 @@ var setTempStyle = function setTempStyle(el, name, value, callback) {
 
 /***/ }),
 
-/***/ 374:
+/***/ 377:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(375);
+module.exports = __webpack_require__(378);
 
 
 /***/ }),
 
-/***/ 375:
+/***/ 378:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2169,7 +2187,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__css_main_scss__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__css_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__css_main_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vue__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__project_vue__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__project_vue__ = __webpack_require__(379);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__config_router__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__config_components__ = __webpack_require__(60);
 
@@ -2192,7 +2210,7 @@ __WEBPACK_IMPORTED_MODULE_6_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_4_ele
 __WEBPACK_IMPORTED_MODULE_6_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_2_element_ui_lib_color_picker___default.a);
 
 // 解决ios click bug
-var attachFastClick = __webpack_require__(112);
+var attachFastClick = __webpack_require__(113);
 attachFastClick.attach(document.body);
 
 // 创建Vue应用根实例
@@ -2206,13 +2224,13 @@ new __WEBPACK_IMPORTED_MODULE_6_vue__["default"]({
 
 /***/ }),
 
-/***/ 376:
+/***/ 379:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_13_7_0_vue_loader_lib_selector_type_script_index_0_project_vue__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_13_7_0_vue_loader_lib_selector_type_script_index_0_project_vue__ = __webpack_require__(114);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_13_7_0_vue_loader_lib_template_compiler_index_id_data_v_73fe8883_hasScoped_false_buble_transforms_node_modules_vue_loader_13_7_0_vue_loader_lib_selector_type_template_index_0_project_vue__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_13_7_0_vue_loader_lib_template_compiler_index_id_data_v_73fe8883_hasScoped_false_buble_transforms_node_modules_vue_loader_13_7_0_vue_loader_lib_selector_type_template_index_0_project_vue__ = __webpack_require__(380);
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -2259,7 +2277,7 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 377:
+/***/ 380:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2278,7 +2296,7 @@ var render = function() {
             { staticClass: "tw-header-left" },
             [
               _c("router-link", { attrs: { to: "/" } }, [
-                _c("img", { attrs: { src: __webpack_require__(378) } })
+                _c("img", { attrs: { src: __webpack_require__(381) } })
               ])
             ],
             1
@@ -3382,7 +3400,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 378:
+/***/ 381:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/images/logo-3d8eedb.png";
@@ -3597,15 +3615,77 @@ var render = function() {
                 _c(
                   "li",
                   [
+                    _c("a", { staticClass: "js-fe" }, [
+                      _c("i", { staticClass: "tw-font xico" }),
+                      _vm._v("前端体系"),
+                      _c("i", { staticClass: "tw-arrow xright" })
+                    ]),
+                    _vm._v(" "),
                     _c(
-                      "router-link",
-                      {
-                        staticClass: "jst-close",
-                        attrs: { to: "/doc/guid/version" }
-                      },
+                      "tw-collapse",
+                      { staticClass: "xsidebar", attrs: { switch: ".js-fe" } },
                       [
-                        _c("i", { staticClass: "tw-font xico" }),
-                        _vm._v("版本管理")
+                        _c("ul", { staticClass: "tw-nav xsidebar" }, [
+                          _c(
+                            "li",
+                            [
+                              _c(
+                                "router-link",
+                                { attrs: { to: "/doc/guid/role" } },
+                                [_vm._v("编码准则")]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "li",
+                            [
+                              _c(
+                                "router-link",
+                                { attrs: { to: "/doc/guid/framwork" } },
+                                [_vm._v("技术框架")]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "li",
+                            [
+                              _c(
+                                "router-link",
+                                { attrs: { to: "/doc/guid/dev-flow" } },
+                                [_vm._v("开发流程")]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "li",
+                            [
+                              _c(
+                                "router-link",
+                                { attrs: { to: "/doc/guid/ide" } },
+                                [_vm._v("编辑器")]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "li",
+                            [
+                              _c(
+                                "router-link",
+                                { attrs: { to: "/doc/guid/shortcut" } },
+                                [_vm._v("快捷输入")]
+                              )
+                            ],
+                            1
+                          )
+                        ])
                       ]
                     )
                   ],
@@ -3615,87 +3695,80 @@ var render = function() {
                 _c(
                   "li",
                   [
+                    _c("a", { staticClass: "js-code" }, [
+                      _c("i", { staticClass: "tw-font xico" }),
+                      _vm._v("代码规范"),
+                      _c("i", { staticClass: "tw-arrow xright" })
+                    ]),
+                    _vm._v(" "),
                     _c(
-                      "router-link",
+                      "tw-collapse",
                       {
-                        staticClass: "jst-close",
-                        attrs: { to: "/doc/guid/dir" }
+                        staticClass: "xsidebar",
+                        attrs: { switch: ".js-code" }
                       },
                       [
-                        _c("i", { staticClass: "tw-font xico" }),
-                        _vm._v("目录及文件")
-                      ]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  [
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "jst-close",
-                        attrs: { to: "/doc/guid/js" }
-                      },
-                      [
-                        _c("i", { staticClass: "tw-font xico" }),
-                        _vm._v("JS规范")
-                      ]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  [
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "jst-close",
-                        attrs: { to: "/doc/guid/css" }
-                      },
-                      [
-                        _c("i", { staticClass: "tw-font xico" }),
-                        _vm._v("CSS规范")
-                      ]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  [
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "jst-close",
-                        attrs: { to: "/doc/guid/html" }
-                      },
-                      [
-                        _c("i", { staticClass: "tw-font xico" }),
-                        _vm._v("HTML规范")
-                      ]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  [
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "jst-close",
-                        attrs: { to: "/doc/guid/shortcut" }
-                      },
-                      [
-                        _c("i", { staticClass: "tw-font xico" }),
-                        _vm._v("快捷输入")
+                        _c("ul", { staticClass: "tw-nav xsidebar" }, [
+                          _c(
+                            "li",
+                            [
+                              _c(
+                                "router-link",
+                                { attrs: { to: "/doc/guid/version" } },
+                                [_vm._v("版本管理")]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "li",
+                            [
+                              _c(
+                                "router-link",
+                                { attrs: { to: "/doc/guid/dir" } },
+                                [_vm._v("目录及文件")]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "li",
+                            [
+                              _c(
+                                "router-link",
+                                { attrs: { to: "/doc/guid/js" } },
+                                [_vm._v("JS规范")]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "li",
+                            [
+                              _c(
+                                "router-link",
+                                { attrs: { to: "/doc/guid/css" } },
+                                [_vm._v("CSS规范")]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "li",
+                            [
+                              _c(
+                                "router-link",
+                                { attrs: { to: "/doc/guid/html" } },
+                                [_vm._v("HTML规范")]
+                              )
+                            ],
+                            1
+                          )
+                        ])
                       ]
                     )
                   ],
@@ -6228,5 +6301,5 @@ if (false) {
 
 /***/ })
 
-},[374]);
-//# sourceMappingURL=project.34fc2cb0.js.map
+},[377]);
+//# sourceMappingURL=project.d2166c5c.js.map

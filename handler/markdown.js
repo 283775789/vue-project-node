@@ -14,7 +14,7 @@ module.exports = function (data) {
 
       try {
         const code = fs.readFileSync(`examples/demo/${matches[1].replace('tw-', '')}.vue`, 'utf-8').replace(/template\s+name=".*"/, 'template')
-        dataRow[i] = `<div class="tw-dropdown-demo"><${matches[1]} /></div>\n<span class="tw-markdown-shortcut"><span>快捷键 | </span>${matches[1]}</span>\n\`\`\`xml\n${code}\`\`\``
+        dataRow[i] = `<div class="tw-dropdown-demo"><${matches[1]} /></div>\n\n<div class="tw-markdown-shortcut"><span>快捷键 | </span>${matches[1]}</div>\n\n\`\`\`xml\n${code}\`\`\``
       } catch (e) {
         dataRow[i] = `<div class="tw-dropdown-demo"><${matches[1]} /></div>\n`
       }
