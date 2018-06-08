@@ -23,7 +23,18 @@
 ## 优化长代码行可读性(可选)
 
 ```
-<!-- 示例 -->
+<!-- 不推荐 -->
+<tw-component v-if="visible" class="xsmall" data="users" @change="getUsers"></tw-component>
+
+<!-- 推荐：示例 1 -->
+<tw-component 
+  v-if="visible"
+  class="xsmall"
+  data="users"
+  @change="getUsers">
+</tw-component>
+
+<!-- 推荐：示例 2 -->
 <tw-component v-if="visible"
               class="xsmall"
               data="users"

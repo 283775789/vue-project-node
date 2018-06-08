@@ -30,17 +30,13 @@
 
 ### 代码示例
 ```
-/* 头部 */ 
+/* 头部:通用 */ 
 .tw-header { height:60px; }
 .tw-header-logo { padding-top:12px;  }
 .tw-header-logotext { font-size:16px; }
 
-/* 小头部:用修饰符更改细节 */ 
+/* 头部:小尺寸(用修饰符更改细节) */ 
 .tw-header.xsmall { height:45px; }
-.tw-header.xsmall .tw-header-logo { padding-top:8px; }
-.tw-header.xsmall .tw-header-logotext { font-size:14px; }
-
-/* 小头部:直接在后代元素上更改细节 */
 .tw-header-logo.xsmall { padding-top:8px;  }
 .tw-header-logotext.xsmall { font-size:14px; }
 ```
