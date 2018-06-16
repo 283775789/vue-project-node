@@ -8,15 +8,15 @@
           <polyline fill="#FFFFFF" points="510.29,768.068 137.702,768.068 137.702,405.857 253.016,405.857 	"/>
           <g>
             <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" x1="510.29" y1="768.068" x2="508.79" y2="768.068"/>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3.0048,3.0048" x1="505.785" y1="768.068" x2="140.704" y2="768.068"/>
-            <polyline fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" points="139.202,768.068 137.702,768.068 
+            <polyline fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" points="139.202,768.068 137.702,768.068
               137.702,766.568 		"/>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3.0186,3.0186" x1="137.702" y1="763.55" x2="137.702" y2="408.867"/>
-            <polyline fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" points="137.702,407.357 137.702,405.857 
+            <polyline fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" points="137.702,407.357 137.702,405.857
               139.202,405.857 		"/>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3.0039,3.0039" x1="142.206" y1="405.857" x2="242.838" y2="405.857"/>
             <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" x1="244.34" y1="405.857" x2="245.84" y2="405.857"/>
             <g>
@@ -60,7 +60,7 @@
         <g>
           <line fill="#FFFFFF" x1="604.969" y1="101.479" x2="604.969" y2="181.869"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" x1="604.969" y1="101.479" x2="604.969" y2="174.693"/>
             <g>
               <polygon fill="#8496A0" points="600.011,173.234 604.997,181.869 609.983,173.234 			"/>
@@ -70,7 +70,7 @@
         <g>
           <line fill="#FFFFFF" x1="604.969" y1="223.313" x2="604.969" y2="303.703"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" x1="604.969" y1="223.313" x2="604.969" y2="296.527"/>
             <g>
               <polygon fill="#8496A0" points="600.011,295.068 604.997,303.703 609.983,295.068 			"/>
@@ -80,7 +80,7 @@
         <g>
           <line fill="#FFFFFF" x1="604.967" y1="303.703" x2="604.967" y2="384.094"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" x1="604.967" y1="303.703" x2="604.967" y2="376.917"/>
             <g>
               <polygon fill="#8496A0" points="600.009,375.458 604.995,384.094 609.981,375.458 			"/>
@@ -90,7 +90,7 @@
         <g>
           <line fill="#FFFFFF" x1="601.069" y1="507.559" x2="601.069" y2="587.948"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" x1="601.069" y1="507.559" x2="601.069" y2="580.772"/>
             <g>
               <polygon fill="#8496A0" points="596.111,579.313 601.096,587.948 606.083,579.313 			"/>
@@ -100,7 +100,7 @@
         <g>
           <line fill="#FFFFFF" x1="601.069" y1="629.392" x2="601.069" y2="709.784"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" x1="601.069" y1="629.392" x2="601.069" y2="702.608"/>
             <g>
               <polygon fill="#8496A0" points="596.111,701.149 601.096,709.784 606.083,701.149 			"/>
@@ -110,7 +110,7 @@
         <g>
           <line fill="#FFFFFF" x1="601.069" y1="818.591" x2="601.069" y2="898.984"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" x1="601.069" y1="818.591" x2="601.069" y2="891.808"/>
             <g>
               <polygon fill="#8496A0" points="596.111,890.349 601.096,898.984 606.083,890.349 			"/>
@@ -120,7 +120,7 @@
         <g>
           <line fill="#FFFFFF" x1="601.069" y1="946.474" x2="601.069" y2="1026.864"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" x1="601.069" y1="946.474" x2="601.069" y2="1019.687"/>
             <g>
               <polygon fill="#8496A0" points="596.111,1018.228 601.096,1026.864 606.083,1018.228 			"/>
@@ -130,7 +130,7 @@
         <g>
           <line fill="#FFFFFF" x1="601.069" y1="1136.64" x2="601.069" y2="1217.03"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" x1="601.069" y1="1136.64" x2="601.069" y2="1209.853"/>
             <g>
               <polygon fill="#8496A0" points="596.111,1208.394 601.096,1217.03 606.083,1208.394 			"/>
@@ -140,7 +140,7 @@
         <g>
           <line fill="#FFFFFF" x1="601.069" y1="1259.367" x2="601.069" y2="1339.756"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" x1="601.069" y1="1259.367" x2="601.069" y2="1332.58"/>
             <g>
               <polygon fill="#8496A0" points="596.111,1331.121 601.096,1339.756 606.083,1331.121 			"/>
@@ -189,7 +189,7 @@
         <g>
           <polyline fill="#FFFFFF" points="341.292,384.094 341.292,303.703 868.645,303.703 868.645,384.094 	"/>
           <g>
-            <polyline fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" points="341.292,376.917 341.292,303.703 
+            <polyline fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" points="341.292,376.917 341.292,303.703
               868.645,303.703 868.645,376.917 		"/>
             <g>
               <polygon fill="#8496A0" points="346.25,375.458 341.265,384.094 336.279,375.458 			"/>
@@ -199,7 +199,7 @@
             </g>
           </g>
         </g>
-        <polyline fill="#FFFFFF" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" points="341.292,426.769 341.292,507.159 
+        <polyline fill="#FFFFFF" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" points="341.292,426.769 341.292,507.159
           868.645,507.159 868.645,426.769 "/>
         <g>
           <text transform="matrix(1 0 0 1 149.9927 593.9702)" fill="#8496A0" font-family="'MicrosoftYaHeiLight'" font-size="20.9115">前后端协商更改</text>
@@ -365,7 +365,12 @@
         </tr>
         <tr>
           <td>api文档编写</td>
-          <td>请求+响应字段<=20：5接口文档/人天<br>请求响应字段每增加20个，增加0.2天</td>
+          <td>请求+响应字段&lt;=20：5接口文档/人天<br>请求响应字段每增加20个，增加0.2天</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>修改组内验收意见</td>
+          <td>复杂-2人天<br>中等-1人天<br>简单-0.5人天</td>
           <td></td>
         </tr>
         <tr>
@@ -499,7 +504,7 @@
         <g>
           <line fill="#FFFFFF" x1="220.06" y1="309.422" x2="220.06" y2="366.396"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3,3" x1="220.06" y1="309.422" x2="220.06" y2="359.219"/>
             <g>
               <polygon fill="#8496A0" points="215.102,357.76 220.087,366.396 225.073,357.76 			"/>
@@ -509,7 +514,7 @@
         <g>
           <line fill="#FFFFFF" x1="220.06" y1="413.706" x2="220.06" y2="470.686"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3,3" x1="220.06" y1="413.706" x2="220.06" y2="463.509"/>
             <g>
               <polygon fill="#8496A0" points="215.102,462.05 220.087,470.686 225.073,462.05 			"/>
@@ -519,7 +524,7 @@
         <g>
           <line fill="#FFFFFF" x1="404.832" y1="413.706" x2="404.832" y2="470.686"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3,3" x1="404.832" y1="413.706" x2="404.832" y2="463.509"/>
             <g>
               <polygon fill="#8496A0" points="399.874,462.05 404.859,470.686 409.846,462.05 			"/>
@@ -529,7 +534,7 @@
         <g>
           <line fill="#FFFFFF" x1="497.217" y1="520.854" x2="497.217" y2="577.831"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3,3" x1="497.217" y1="520.854" x2="497.217" y2="570.655"/>
             <g>
               <polygon fill="#8496A0" points="492.259,569.196 497.245,577.831 502.231,569.196 			"/>
@@ -539,7 +544,7 @@
         <g>
           <line fill="#FFFFFF" x1="497.217" y1="673.99" x2="497.217" y2="730.966"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3,3" x1="497.217" y1="673.99" x2="497.217" y2="723.79"/>
             <g>
               <polygon fill="#8496A0" points="492.259,722.331 497.245,730.966 502.231,722.331 			"/>
@@ -549,7 +554,7 @@
         <g>
           <line fill="#FFFFFF" x1="683.903" y1="413.706" x2="683.903" y2="470.686"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3,3" x1="683.903" y1="413.706" x2="683.903" y2="463.509"/>
             <g>
               <polygon fill="#8496A0" points="678.945,462.05 683.93,470.686 688.917,462.05 			"/>
@@ -559,7 +564,7 @@
         <g>
           <line fill="#FFFFFF" x1="404.832" y1="309.422" x2="404.832" y2="366.396"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3,3" x1="404.832" y1="309.422" x2="404.832" y2="359.219"/>
             <g>
               <polygon fill="#8496A0" points="399.874,357.76 404.859,366.396 409.846,357.76 			"/>
@@ -569,7 +574,7 @@
         <g>
           <line fill="#FFFFFF" x1="298.705" y1="189.908" x2="298.705" y2="246.885"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3,3" x1="298.705" y1="189.908" x2="298.705" y2="239.709"/>
             <g>
               <polygon fill="#8496A0" points="293.747,238.25 298.732,246.885 303.718,238.25 			"/>
@@ -579,7 +584,7 @@
         <g>
           <line fill="#FFFFFF" x1="495.077" y1="84.7" x2="495.077" y2="141.677"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3,3" x1="495.077" y1="84.7" x2="495.077" y2="134.501"/>
             <g>
               <polygon fill="#8496A0" points="490.119,133.042 495.104,141.677 500.09,133.042 			"/>
@@ -589,7 +594,7 @@
         <g>
           <line fill="#FFFFFF" x1="589.605" y1="196.087" x2="589.605" y2="253.064"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3,3" x1="589.605" y1="196.087" x2="589.605" y2="245.888"/>
             <g>
               <polygon fill="#8496A0" points="584.647,244.429 589.632,253.064 594.619,244.429 			"/>
@@ -599,7 +604,7 @@
         <g>
           <line fill="#FFFFFF" x1="589.605" y1="304.883" x2="589.605" y2="361.862"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3,3" x1="589.605" y1="304.883" x2="589.605" y2="354.686"/>
             <g>
               <polygon fill="#8496A0" points="584.647,353.227 589.632,361.862 594.619,353.227 			"/>
@@ -609,7 +614,7 @@
         <g>
           <line fill="#FFFFFF" x1="774.383" y1="196.087" x2="774.383" y2="253.064"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3,3" x1="774.383" y1="196.087" x2="774.383" y2="245.888"/>
             <g>
               <polygon fill="#8496A0" points="769.425,244.429 774.411,253.064 779.397,244.429 			"/>
@@ -619,7 +624,7 @@
         <g>
           <line fill="#FFFFFF" x1="774.383" y1="304.883" x2="774.383" y2="361.862"/>
           <g>
-            
+
               <line fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3,3" x1="774.383" y1="304.883" x2="774.383" y2="354.686"/>
             <g>
               <polygon fill="#8496A0" points="769.425,353.227 774.411,361.862 779.397,353.227 			"/>
@@ -628,7 +633,7 @@
         </g>
         <g>
           <g>
-            <polyline fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3,3" points="417.402,625.912 
+            <polyline fill="none" stroke="#8496A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3,3" points="417.402,625.912
               63.606,625.912 63.606,56.657 139.932,56.657 		"/>
             <g>
               <polygon fill="#8496A0" points="138.473,61.615 147.108,56.629 138.473,51.643 			"/>
@@ -726,7 +731,8 @@
 </template>
 
 <script>
-  export default {
-    name: 'dev-flow'
-  }
+
+export default {
+  name: 'dev-flow'
+}
 </script>
