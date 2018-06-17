@@ -30,7 +30,7 @@ module.exports = function (data, filePath, name, type) {
       code = resultCode.join('\n')
 
       if (type !== 'guid') {
-        dataRows[i] = `<div class="tw-demo"><demo-${matches[1]} /></div>\n\n<div class="tw-markdown-shortcut"><span>快捷键 | </span>${matches[1]}</div>\n\n\`\`\`xml\n${code}\`\`\``
+        dataRows[i] = `<div class="tw-demo"><demo-${matches[1]} /></div>\n\n<div class="tw-markdown-shortcut"><span>快捷键 | </span>tw-${matches[1]}</div>\n\n\`\`\`xml\n${code}\`\`\``
       } else {
         dataRows[i] = `<div class="tw-demo"><demo-${matches[1]} /></div>\n`
       }

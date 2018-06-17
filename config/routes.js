@@ -13,7 +13,7 @@ router.get('/', function (req, res, next) {
 
 // 处理scss变量模板
 router.get('/api/scss-vars', function (req, res, next) {
-  fs.readFile('templates/scss/web-variables.scss', 'utf-8', (e, data) => {
+  fs.readFile('teewon/scss/web-variables.scss', 'utf-8', (e, data) => {
     const result = scss.compileTemplate(data)
     res.send(JSON.stringify(result))
   })
@@ -39,11 +39,15 @@ router.get('/api/docs/:type/:name', function (req, res, next) {
 
 // 处理css请求
 router.post('/api/css', function (req, res, next) {
-  const scssContent = scss.createScss(req.body) + fs.readFileSync('www/static/css/main.scss')
+  const scssContent = scss.createScss(req.body) + fs.readFileSync('src/static/style/main.scss')
 
   sass.render({
     data: scssContent,
-    includePaths: ['www/static/css/'],
+    includePaths: [
+      'src/static/style',
+      'src//assemblies/components',
+      'src/static/style/modules'
+    ],
     outputStyle: 'compressed'
   }, function (e, result) {
     if (e) {
