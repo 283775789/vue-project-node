@@ -11,9 +11,9 @@ $app-type: web; // [前台样式:web, 后台样式:admin, 移动端样式:mobile
 $color-main: #26a8ff; // 主色
 $color-main-hover: #12a0ff; // 主色:滑过
 $color-main-active: #0097fc; // 主色:激活
-$color-auxiliary: #6ec940; // 辅色
-$color-auxiliary-hover: #ebb000; // 辅色:滑过
-$color-auxiliary-active: #d6a000; // 辅色:激活
+$color-secondary: #6ec940; // 辅色
+$color-secondary-hover: #ebb000; // 辅色:滑过
+$color-secondary-active: #d6a000; // 辅色:激活
 $color-weaking: #fff; // 弱化色
 
 /* 标识色{Color+} */
@@ -28,7 +28,7 @@ $color-bg-disabled: #eee; // 禁用背景
 
 /* 文本色{Color+} */
 $color-text-main:#333; // 主文本
-$color-text-auxiliary:#666; // 辅助文本
+$color-text-secondary:#666; // 辅助文本
 $color-text-weaking:#999; // 弱化文本
 $color-text-disabled:#ccc; // 禁用文本
 $color-text-highlight:#479025; // 高亮文本
@@ -40,7 +40,7 @@ $color-text-placeholder: #999; // 占位文本
 
 /* 边框色{Color+} */
 $color-border-main:#ccc; // 主边框
-$color-border-auxiliary:#ddd; // 辅边框
+$color-border-secondary:#ddd; // 辅边框
 $color-border-disabled:#eee; // 禁用边框
 $color-border-weaking:#eee; // 弱化边框
 

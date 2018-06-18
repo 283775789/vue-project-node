@@ -11,9 +11,9 @@ $app-type: web; // [前台样式:web, 后台样式:admin, 移动端样式:mobile
 $color-main: #26a8ff; // 主色
 $color-main-hover: #12a0ff; // 主色:滑过
 $color-main-active: #0097fc; // 主色:激活
-$color-auxiliary: #6ec940; // 辅色
-$color-auxiliary-hover: #ebb000; // 辅色:滑过
-$color-auxiliary-active: #d6a000; // 辅色:激活
+$color-secondary: #6ec940; // 辅色
+$color-secondary-hover: #ebb000; // 辅色:滑过
+$color-secondary-active: #d6a000; // 辅色:激活
 $color-weaking: #fff; // 弱化色
 
 /* 背景色{Color+} */
@@ -29,7 +29,7 @@ $color-error:#ff6c60; // 错误
 
 /* 文本色{Color+} */
 $color-text-main:#333; // 主文本
-$color-text-auxiliary:#666; // 辅助文本
+$color-text-secondary:#666; // 辅助文本
 $color-text-weaking:#999; // 弱化文本
 $color-text-disabled:#ccc; // 禁用文本
 $color-text-highlight:#479025; // 高亮文本
@@ -41,7 +41,7 @@ $color-text-placeholder: #999; // 占位文本
 
 /* 边框色{Color+} */
 $color-border-main:#ccc; // 主边框
-$color-border-auxiliary:#ddd; // 辅边框
+$color-border-secondary:#ddd; // 辅边框
 $color-border-disabled:#eee; // 禁用边框
 $color-border-weaking:#eee; // 弱化边框
 
@@ -100,8 +100,8 @@ $time: .12s; // 过渡时间
 /* ------------------------------ 组件变量 ------------------------------ */
 /* markdown */
 $markdown-px: $spacing-medium; // 容器水平内边距
-$markdown-color: $color-text-auxiliary; // 默认文字颜色
-$markdown-title-color: $color-text-auxiliary; // 标题文字颜色
+$markdown-color: $color-text-secondary; // 默认文字颜色
+$markdown-title-color: $color-text-secondary; // 标题文字颜色
 $markdown-title1-font-size: $font-size-large;  // 一级标题字号
 $markdown-title2-font-size: $font-size-medium; // 二级标题字号
 $markdown-title3-font-size: $font-size-default; // 三级标题字号
@@ -130,9 +130,9 @@ $btn-border-radius: 3px; // 按钮边框
 $btn-main-bg: $color-main; // 主按钮背景
 $btn-main-bg-hover: $color-main-hover; // 主按钮背景滑过色
 $btn-main-color: $color-text-inverse; // 主按钮文本色
-$btn-auxiliary-bg: $color-auxiliary; // 辅助按钮背景
-$btn-auxiliary-bg-hover: $color-auxiliary-hover; // 辅助按钮背景色
-$btn-auxiliary-color: $color-text-inverse; // 辅助按钮文本色
+$btn-secondary-bg: $color-secondary; // 辅助按钮背景
+$btn-secondary-bg-hover: $color-secondary-hover; // 辅助按钮背景色
+$btn-secondary-color: $color-text-inverse; // 辅助按钮文本色
 $btn-weaking-bg: $color-weaking; // 弱化按钮背景
 $btn-weaking-border-color: $color-border-main; // 弱化按钮背景色
 $btn-weaking-color: $color-text-main; // 弱化按钮文本色
@@ -148,7 +148,7 @@ $control-padding: $spacing-step; // 控件内边距
 $control-font-size: $font-size-default; // 控件字体尺寸
 $control-font-size-small: $font-size-small; // 小控件字体尺寸
 $control-font-size-large: $font-size-large; // 大控件字体尺寸
-$control-color: $color-text-auxiliary; // 控件文本色
+$control-color: $color-text-secondary; // 控件文本色
 $control-border-color: $color-border-main; // 控件边框颜色
 $control-focus-border-color: $color-main; // 控件选中边框色
 $control-radius: 3px; // 控件边框圆角
@@ -203,7 +203,7 @@ $select-list-item-hover-color: $color-text-inverse; // 选项滑过字体颜色
 $select-list-item-selected-bg: $color-main-hover; // 选项选中背景
 $select-list-item-selected-color: $color-text-inverse; // 选项选中背景
 $select-list-item-selected-ico-size: $font-size-medium; // 选中图标大小
-$select-list-item-selected-ico-color: $color-auxiliary; // 选中图标颜色
+$select-list-item-selected-ico-color: $color-secondary; // 选中图标颜色
 $select-group-name-height: $ctr-height-small; // 选项组名高度
 $select-group-name-color: $color-text-weaking; // 选项组名颜色
 
@@ -231,7 +231,7 @@ $sidebar-active-bg: $color-main-active;
 $sidebar-reversal-color:#fff;
 $sidebar-link-divider:1px dashed $color-border-main;
 $sidebar-icon-size:20px;
-$sidebar-icon-font-color:$color-auxiliary;
+$sidebar-icon-font-color:$color-secondary;
 
 /* 标题 */
 $title-marker-left: -$spacing-medium;

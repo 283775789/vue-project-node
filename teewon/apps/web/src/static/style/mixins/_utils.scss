@@ -23,7 +23,7 @@
 @mixin clearfix {
   &:after {
     content: " ";
-    display: table;
+    display: block;
     clear: both;
   }
 }
@@ -64,4 +64,28 @@
   bottom: 0;
   width: 1px;
   background: $lineColor;
+}
+
+// 在手机端生成1个像素的边框
+@mixin lines($placements: bottom, $color: #ccc) {
+
+  $bgs: ();
+
+  @each $placement in $placements {
+    @if $placement == top {
+      $bg: linear-gradient(to top, transparent 49%, $color 50%) no-repeat top left / 100% 1px;
+      $bgs: append($bgs, $bg, comma);
+    } @else if $placement == right {
+      $bg: linear-gradient(to right, transparent 49%, $color 50%) no-repeat top right / 1px 100%;
+      $bgs: append($bgs, $bg, comma);
+    } @else if $placement == bottom {
+      $bg: linear-gradient(to bottom, transparent 49%, $color 50%) no-repeat bottom left / 100% 1px;
+      $bgs: append($bgs, $bg, comma);
+    } @else if $placement == left {
+      $bg: linear-gradient(to left, transparent 49%, $color 50%) no-repeat top left  / 1px 100%;
+      $bgs: append($bgs, $bg, comma);
+    }
+  }
+
+  background: $bgs;
 }

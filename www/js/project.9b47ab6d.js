@@ -372,9 +372,9 @@ webpackJsonp([2],{
         'main': null,
         'main-hover': null,
         'main-active': null,
-        'auxiliary': null,
-        'auxiliary-hover': null,
-        'auxiliary-active': null,
+        'secondary': null,
+        'secondary-hover': null,
+        'secondary-active': null,
         'weaking': null,
         'success': null,
         'warning': null,
@@ -383,7 +383,7 @@ webpackJsonp([2],{
         'bg-footer': null,
         'bg-disabled': null,
         'text-main': null,
-        'text-auxiliary': null,
+        'text-secondary': null,
         'text-weaking': null,
         'text-link': null,
         'text-link-hover': null,
@@ -393,7 +393,7 @@ webpackJsonp([2],{
         'text-inverse': null,
         'text-placeholder': null,
         'border-main': null,
-        'border-auxiliary': null,
+        'border-secondary': null,
         'border-weaking': null,
         'border-link': null,
         'border-disabled': null
@@ -2494,11 +2494,11 @@ var render = function() {
                         _c("el-color-picker", {
                           staticClass: "tw-colorcell",
                           model: {
-                            value: _vm.color["auxiliary"],
+                            value: _vm.color["secondary"],
                             callback: function($$v) {
-                              _vm.$set(_vm.color, "auxiliary", $$v)
+                              _vm.$set(_vm.color, "secondary", $$v)
                             },
-                            expression: "color['auxiliary']"
+                            expression: "color['secondary']"
                           }
                         })
                       ],
@@ -2518,11 +2518,11 @@ var render = function() {
                         _c("el-color-picker", {
                           staticClass: "tw-colorcell",
                           model: {
-                            value: _vm.color["auxiliary-hover"],
+                            value: _vm.color["secondary-hover"],
                             callback: function($$v) {
-                              _vm.$set(_vm.color, "auxiliary-hover", $$v)
+                              _vm.$set(_vm.color, "secondary-hover", $$v)
                             },
-                            expression: "color['auxiliary-hover']"
+                            expression: "color['secondary-hover']"
                           }
                         })
                       ],
@@ -2542,11 +2542,11 @@ var render = function() {
                         _c("el-color-picker", {
                           staticClass: "tw-colorcell",
                           model: {
-                            value: _vm.color["auxiliary-active"],
+                            value: _vm.color["secondary-active"],
                             callback: function($$v) {
-                              _vm.$set(_vm.color, "auxiliary-active", $$v)
+                              _vm.$set(_vm.color, "secondary-active", $$v)
                             },
-                            expression: "color['auxiliary-active']"
+                            expression: "color['secondary-active']"
                           }
                         })
                       ],
@@ -2627,11 +2627,11 @@ var render = function() {
                         _c("el-color-picker", {
                           staticClass: "tw-colorcell",
                           model: {
-                            value: _vm.color["text-auxiliary"],
+                            value: _vm.color["text-secondary"],
                             callback: function($$v) {
-                              _vm.$set(_vm.color, "text-auxiliary", $$v)
+                              _vm.$set(_vm.color, "text-secondary", $$v)
                             },
-                            expression: "color['text-auxiliary']"
+                            expression: "color['text-secondary']"
                           }
                         })
                       ],
@@ -3035,11 +3035,11 @@ var render = function() {
                         _c("el-color-picker", {
                           staticClass: "tw-colorcell",
                           model: {
-                            value: _vm.color["border-auxiliary"],
+                            value: _vm.color["border-secondary"],
                             callback: function($$v) {
-                              _vm.$set(_vm.color, "border-auxiliary", $$v)
+                              _vm.$set(_vm.color, "border-secondary", $$v)
                             },
-                            expression: "color['border-auxiliary']"
+                            expression: "color['border-secondary']"
                           }
                         })
                       ],
@@ -4607,13 +4607,13 @@ var render = function() {
           staticClass: "tw-stickybox-footer"
         },
         [
-          _c("a", { staticClass: "tw-btn xauxiliary xlarge" }, [
+          _c("a", { staticClass: "tw-btn xsecondary xlarge" }, [
             _vm._v("选择模板")
           ]),
           _vm._v(" "),
           _c("a", { staticClass: "tw-btn xmain xlarge" }, [_vm._v("生成项目")]),
           _vm._v(" "),
-          _c("a", { staticClass: "tw-btn xauxiliary xlarge" }, [
+          _c("a", { staticClass: "tw-btn xsecondary xlarge" }, [
             _vm._v("保存为模板")
           ]),
           _vm._v(" "),

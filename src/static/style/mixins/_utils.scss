@@ -65,19 +65,3 @@
   width: 1px;
   background: $lineColor;
 }
-
-// 生成1px线条
-@mixin line ($placements:(top), $color:$color-border-main) {
-  $background: '';
-  @each $placement in $placements {
-    @if $placement == top {
-
-    }
-  }
-}
-
-/*
-  background:url("haoroomsCSS1_s.jpg") 0 0 no-repeat,
-                     url("haoroomsCSS2_s.jpg") 200px 0 no-repeat,
-                     url("haorooms.jpg") 400px 201px no-repeat;
-*/

@@ -5,7 +5,7 @@
 /* --------------------------- 重置CSS组件 --------------------------- */
 // 侧边栏右侧分隔线
 .tw-sidebar::after {
-  @include lineY($color-border-auxiliary);
+  @include lineY($color-border-secondary);
   left: 200px;
 }
 
@@ -18,7 +18,7 @@
 
 /* 内容块 */
 $block-ml: $spacing-medium !default;
-$block-title-color: $color-text-auxiliary !default;
+$block-title-color: $color-text-secondary !default;
 $block-border-color:$color-border-main !default;
 
 // scss变量容器

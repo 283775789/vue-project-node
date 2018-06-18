@@ -16,9 +16,9 @@ $app-type: web !default; // [前台样式:web, 后台样式:admin, 移动端样�
 $color-main: #26a8ff !default; // 主色
 $color-main-hover: hover($color-main) !default; // 主色:滑过
 $color-main-active: active($color-main) !default; // 主色:激活
-$color-auxiliary: #6ec940 !default; // 辅色
-$color-auxiliary-hover: hover($color-auxiliary) !default; // 辅色:滑过
-$color-auxiliary-active: active($color-auxiliary) !default; // 辅色:激活
+$color-secondary: #6ec940 !default; // 辅色
+$color-secondary-hover: hover($color-secondary) !default; // 辅色:滑过
+$color-secondary-active: active($color-secondary) !default; // 辅色:激活
 $color-weaking: #fff !default; // 弱化色
 
 /* 背景色{Color+} */
@@ -28,13 +28,14 @@ $color-bg-footer: #afb9c9 !default; // 页脚背景
 $color-bg-disabled: #eee !default; // 禁用背景
 
 /* 标识色{Color+} */
+$color-success:#78cf70 !default; // 提示
 $color-success:#78cf70 !default; // 成功
 $color-warning:#ffb555 !default; // 警告
 $color-error:#ff6c60 !default; // 错误
 
 /* 文本色{Color+} */
 $color-text-main:#333 !default; // 主文本
-$color-text-auxiliary:#666 !default; // 辅助文本
+$color-text-secondary:#666 !default; // 辅助文本
 $color-text-weaking:#999 !default; // 弱化文本
 $color-text-disabled:#ccc !default; // 禁用文本
 $color-text-highlight:#479025 !default; // 高亮文本
@@ -46,7 +47,7 @@ $color-text-placeholder: $color-text-weaking !default; // 占位文本
 
 /* 边框色{Color+} */
 $color-border-main:#ccc !default; // 主边框
-$color-border-auxiliary:#ddd !default; // 辅边框
+$color-border-secondary:#ddd !default; // 辅边框
 $color-border-disabled:#eee !default; // 禁用边框
 $color-border-weaking:#eee !default; // 弱化边框
 
@@ -88,12 +89,11 @@ $ctr-height-large: $ctr-height-default + $ctr-height-step * 2 !default; // 大�
 
 /* 控件宽度 */
 $ctr-width-step: 40px !default; // 宽度步长
-$ctr-width-default: 100% !default; // 默认高度
 $ctr-width-tiny: $ctr-width-step * 2 !default; // 超小宽度
 $ctr-width-small: $ctr-width-step * 3 !default; // 小宽度
 $ctr-width-medium: $ctr-width-step * 4 !default; // 中宽度
 $ctr-width-large: $ctr-width-step * 5 !default; // 大宽度
-$ctr-width-large: $ctr-width-step * 6 !default; // 超大宽度
+$ctr-width-huge: $ctr-width-step * 6 !default; // 超大宽度
 
 
 /* ------------------------------ 响应式体系(pc优先) ------------------------------ */

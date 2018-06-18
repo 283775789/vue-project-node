@@ -2984,7 +2984,7 @@ var staticRenderFns = [
     return _c("div", [
       _c("a", { staticClass: "tw-btn xmain" }, [_vm._v("主按钮")]),
       _vm._v(" "),
-      _c("a", { staticClass: "tw-btn xauxiliary" }, [_vm._v("辅按钮")]),
+      _c("a", { staticClass: "tw-btn xsecondary" }, [_vm._v("辅按钮")]),
       _vm._v(" "),
       _c("a", { staticClass: "tw-btn xweaking" }, [_vm._v("弱化按钮")])
     ])
@@ -6455,13 +6455,13 @@ var render = function() {
           staticClass: "tw-stickybox-footer"
         },
         [
-          _c("a", { staticClass: "tw-btn xauxiliary xlarge" }, [
+          _c("a", { staticClass: "tw-btn xsecondary xlarge" }, [
             _vm._v("选择模板")
           ]),
           _vm._v(" "),
           _c("a", { staticClass: "tw-btn xmain xlarge" }, [_vm._v("生成项目")]),
           _vm._v(" "),
-          _c("a", { staticClass: "tw-btn xauxiliary xlarge" }, [
+          _c("a", { staticClass: "tw-btn xsecondary xlarge" }, [
             _vm._v("保存为模板")
           ]),
           _vm._v(" "),
