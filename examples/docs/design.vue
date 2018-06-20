@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="scssVars.length>0">
     <h2>颜色体系</h2>
     <table>
       <thead>
@@ -61,7 +61,7 @@
         <tr>
           <td class="tw-scsstd" colspan="4">
             <div class="tw-title xsub">背景色-示例</div>
-            <div class="tw-scssvar" v-for="(scssVar, index) in scssVars[1].children[1].children" :key="index" :title="scssVar.varName+':'+scssVar.value">
+            <div class="tw-scssvar" v-for="(scssVar, index) in scssVars[1].children[2].children" :key="index" :title="scssVar.varName+':'+scssVar.value">
               <div class="tw-scssvar-body">
                 <el-color-picker class="tw-colorcell" v-model="scssVar.value" @change="changeScssVars"></el-color-picker>
               </div>
@@ -86,7 +86,7 @@
         <tr>
           <td class="tw-scsstd" colspan="4">
             <div class="tw-title xsub">标识色-示例</div>
-            <div class="tw-scssvar" v-for="(scssVar, index) in scssVars[1].children[2].children" :key="index" :title="scssVar.varName+':'+scssVar.value">
+            <div class="tw-scssvar" v-for="(scssVar, index) in scssVars[1].children[1].children" :key="index" :title="scssVar.varName+':'+scssVar.value">
               <div class="tw-scssvar-body">
                 <el-color-picker class="tw-colorcell" v-model="scssVar.value" @change="changeScssVars"></el-color-picker>
               </div>
@@ -166,6 +166,263 @@
         </tr>
       </tbody>
     </table>
+    <h2>字体体系</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:10%;">分类</th>
+          <th style="width:20%;">概要</th>
+          <th>成员</th>
+          <th>应用场景</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">字体家族</td>
+          <td rowspan="2">使信息易读，友好，专业</td>
+          <td>web端字体</td>
+          <td>
+            <div>用于PC-Web端项目,取值如下：</div>
+            <div>"Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;</div>
+          </td>
+        </tr>
+        <tr>
+          <td>移动端字体</td>
+          <td>
+            <div>用于移动端项目,取值如下：</div>
+            <div>"-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+             "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+             SimSun, sans-serif;</div>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="4">字号</td>
+          <td rowspan="4">使信息层次分明，提升阅读体验</td>
+          <td>小字号(12px)</td>
+          <td>需要尽可能多的显示器上显示信息或受限于容器尺寸限制等情形时使用</td>
+        </tr>
+        <tr>
+          <td>默认字号(14px)</td>
+          <td>
+            <img src="https://gw.alipayobjects.com/zos/rmsportal/yriUFbqOPtVniYYiikfb.png" style="width:480px;" />
+            <br>
+            为系统的默认字体，以保证整个系统所传递信息的最佳阅读体验
+          </td>
+        </tr>
+        <tr>
+          <td>中号字体(16px)</td>
+          <td>用于标题或需突出显示的信息</td>
+        </tr>
+        <tr>
+          <td>大号字体(20px)</td>
+          <td>重点强调信息</td>
+        </tr>
+        <tr>
+          <td class="tw-scsstd" colspan="4">
+            <div class="tw-title xsub">字号-示例</div>
+            <div class="tw-scssvar" v-for="(scssVar, index) in scssVars[2].children[1].children" :key="index" :title="scssVar.varName+':'+scssVar.value">
+              <div class="tw-scssvar-body">
+                <input :style="{fontSize:parseInt(scssVar.value)<10?'10px':scssVar.value}" type="text" class="tw-scssvar-value" v-model="scssVar.value" @change="changeScssVars" />
+              </div>
+              <div class="tw-scssvar-title">{{scssVar.name}}</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>间距体系</h2>
+    <p>如果信息之间关联性越高，它们之间的距离就应该越接近，也越像一个视觉单元；反之，则它们的距离就应该越远，也越像多个视觉单元。亲密性的根本目的是实现组织性，让用户对页面结构和信息层次一目了然。</p>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:10%;">分类</th>
+          <th style="width:20%;">概要</th>
+          <th>成员</th>
+          <th>应用场景</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>行高</td>
+          <td>看不见的文字容器</td>
+          <td>默认行高(1.5)</td>
+          <td>
+            <div>行高可以认为是一个看不见的盒子(行高演示)，一般用于多行文字显示时增强信息的可读性；在单行文字时，设置过小有可能会导致文字被截断，所以我们采用了Bootstrap4的1.5倍文字大小来做为行高，但这也是导致视觉间距与设计稿实际间距看起来不相等的罪魁祸首，所以如果系统对间距有很精确的要求，可以用scss函数getExactSpacing($spacing, $font-size, $line-height)来修正为完全与设计稿一致的间距尺寸。</div>
+            <div></div>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="6">间距</td>
+          <td rowspan="6">划分信息层级</td>
+          <td>间距步长(5px)</td>
+          <td>用于确定整个系统的间距最小跳跃单位</td>
+        </tr>
+        <tr>
+          <td>超小间距(10px)</td>
+          <td>如标题与内容之间</td>
+        </tr>
+        <tr>
+          <td>小间距(15px)</td>
+          <td>同一模块的不同元素之间</td>
+        </tr>
+        <tr>
+          <td>中间距(20px)</td>
+          <td>不同模块之间</td>
+        </tr>
+        <tr>
+          <td>大间距(30px)</td>
+          <td>用于视觉布局，调控模块留白</td>
+        </tr>
+        <tr>
+          <td>超大间距(40px)</td>
+          <td>用于视觉布局，调控模块留白</td>
+        </tr>
+        <tr>
+          <td class="tw-scsstd" colspan="4">
+            <div class="tw-title xsub">间距-示例</div>
+            <div class="tw-scssvar" v-for="(scssVar, index) in scssVars[3].children[1].children" :key="index" :title="scssVar.varName" :style="{marginLeft:index === 0 ? 0 : scssVar.value}">
+                <div class="tw-scssvar-body">
+                  <input type="text" class="tw-scssvar-value" v-model="scssVar.value" @change="changeScssVars" />
+                </div>
+                <div class="tw-scssvar-title">{{scssVar.name}}</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>尺寸体系</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:10%;">分类</th>
+          <th style="width:20%;">概要</th>
+          <th>成员</th>
+          <th>应用场景</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="5">控件高度</td>
+          <td rowspan="5">用于控件排版,使排版简洁，规范</td>
+          <td>高度步长(6px)</td>
+          <td>控制高度的最小跳跃单位</td>
+        </tr>
+        <tr>
+          <td>小高度(24px)</td>
+          <td>节约排版空间时使用</td>
+        </tr>
+        <tr>
+          <td>默认高度(30px)</td>
+          <td>用于文本框，按钮等</td>
+        </tr>
+        <tr>
+          <td>中高度(36px)</td>
+          <td>大文本框，大按钮</td>
+        </tr>
+        <tr>
+          <td>大高度(42px)</td>
+          <td>突显操作特性，如登录页面输入框入按钮</td>
+        </tr>
+        <tr>
+          <td rowspan="7">控件宽度</td>
+          <td rowspan="7">用于控件排版,使排版简洁，规范</td>
+          <td>宽度步长(40px)</td>
+          <td>控件宽度的最小跳跃单位</td>
+        </tr>
+        <tr>
+          <td>默认宽度(100%)</td>
+          <td>默认宽度为父容器的宽度</td>
+        </tr>
+        <tr>
+          <td>超小宽度(80px)</td>
+          <td>节约排版空间时使用</td>
+        </tr>
+        <tr>
+          <td>小宽度(120px)</td>
+          <td>节约排版空间时使用</td>
+        </tr>
+        <tr>
+          <td>中宽度(160px)</td>
+          <td>随输入内容的多少而定</td>
+        </tr>
+        <tr>
+          <td>大宽度(200px)</td>
+          <td>随输入内容的多少而定</td>
+        </tr>
+        <tr>
+          <td>超大宽度(240px)</td>
+          <td>随输入内容的多少而定</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>响应式体系</h2>
+    <div>响应式布局，从用户体验与业界主流应用来说，并不推荐同时响应PC,Pad,phone三端的设计模式，框架体系依然保留了bootstrap的响应式体系，但为了更自然的书写css，pc-web端摒弃了Bootstrap的移动端优先原则，而改为了PC端优先。</div>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:10%;">分类</th>
+          <th style="width:20%;">概要</th>
+          <th>成员</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="5">PC-Web端系统</td>
+          <td rowspan="5">PC端优先</td>
+          <td>默认(pc)</td>
+          <td>所有默认的css都为pc端优先</td>
+        </tr>
+        <tr>
+          <td>pad横屏(lpad)</td>
+          <td>@media (max-width:1199px) {...}</td>
+        </tr>
+        <tr>
+          <td>pad坚屏(pad)</td>
+          <td>@media (max-width:991px) {...}</td>
+        </tr>
+        <tr>
+          <td>手机横屏(lphone)</td>
+          <td>@media (max-width:767px) {...}</td>
+        </tr>
+        <tr>
+          <td>手机坚屏(phone)</td>
+          <td>@media (max-width:575px) {...}</td>
+        </tr>
+        <tr>
+          <td rowspan="5">移动App</td>
+          <td rowspan="5">移动端优先</td>
+          <td>默认(phone)</td>
+          <td>所有默认的css都为移动端优先</td>
+        </tr>
+        <tr>
+          <td>手机横屏(lphone)</td>
+          <td>@media (min-width:576px) {...}</td>
+        </tr>
+        <tr>
+          <td>pad坚屏(pad)</td>
+          <td>@media (min-width:768px) {...}</td>
+        </tr>
+        <tr>
+          <td>pad横屏(lpad)</td>
+          <td>@media (min-width:992px) {...}</td>
+        </tr>
+        <tr>
+          <td>PC端(pc)</td>
+          <td>@media (min-width:1200px) {...}</td>
+        </tr>
+        <tr>
+          <td rowspan="2">栅格</td>
+          <td rowspan="2">均分栅格</td>
+          <td>栅格数量</td>
+          <td>12列</td>
+        </tr>
+        <tr>
+          <td>栅格间隔</td>
+          <td>20px</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
@@ -181,9 +438,13 @@
     methods: {
       changeScssVars () {
         const vm = this
+
         vm.axios.post('http://localhost:83/css', vm.scssVars).then(function (responed) {
+          debugger
           vm.styleEl.textContent = responed.data
+          debugger
         }).catch(function (error) {
+          debugger
           console.log(error)
         })
       }

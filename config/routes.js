@@ -8,7 +8,7 @@ const markdown = require('../handler/markdown')
 const uid = 0
 
 router.get('/', function (req, res, next) {
-  res.sendfile(path.join(__dirname, '../www/html/main.html'))
+  res.sendfile(path.join(__dirname, '../www/main.html'))
 })
 
 // 处理scss变量模板
