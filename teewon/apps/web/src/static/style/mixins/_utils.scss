@@ -1,0 +1,91 @@
+/* ---------------------------- 工具类mixin -------------------------------- */
+// 超出省略
+@mixin cutoff {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 垂直居中对齐
+@mixin center-y {
+  white-space: nowrap;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+// 清除浮动
+@mixin clearfix {
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+// 生成禁用样式
+@mixin disable {
+  cursor: not-allowed;
+  opacity: .45;
+}
+
+// 生成小三角形
+@mixin triangle($direction:bottom, $size:5px) {
+  $placements: top, left, bottom, right;
+
+  $placement-map:(
+    up: bottom,
+    right: left,
+    down: top,
+    left: right
+  );
+
+  $direction-reversal: map-get($placement-map, $direction);
+  display: inline-block;
+  border: $size solid;
+
+  @each $placement in $placements {
+    @if $placement != $direction-reversal {
+      border-#{$placement}-color: transparent;
+    }
+  }
+}
+
+// 生成一条垂直线
+@mixin lineY($lineColor:$color-border-main) {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: $lineColor;
+}
+
+// 在手机端生成1个像素的边框
+@mixin lines($placements: bottom, $color: #ccc) {
+
+  $bgs: ();
+
+  @each $placement in $placements {
+    @if $placement == top {
+      $bg: linear-gradient(to top, transparent 49%, $color 50%) no-repeat top left / 100% 1px;
+      $bgs: append($bgs, $bg, comma);
+    } @else if $placement == right {
+      $bg: linear-gradient(to right, transparent 49%, $color 50%) no-repeat top right / 1px 100%;
+      $bgs: append($bgs, $bg, comma);
+    } @else if $placement == bottom {
+      $bg: linear-gradient(to bottom, transparent 49%, $color 50%) no-repeat bottom left / 100% 1px;
+      $bgs: append($bgs, $bg, comma);
+    } @else if $placement == left {
+      $bg: linear-gradient(to left, transparent 49%, $color 50%) no-repeat top left  / 1px 100%;
+      $bgs: append($bgs, $bg, comma);
+    }
+  }
+
+  background: $bgs;
+}

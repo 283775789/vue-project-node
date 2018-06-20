@@ -12,27 +12,42 @@ router.get('/', function (req, res, next) {
 })
 
 // 处理scss变量模板
-router.get('/getScssVars', function (req, res, next) {
-  fs.readFile('templates/scss/web-variables.scss', 'utf-8', (e, data) => {
+router.get('/api/scss-vars', function (req, res, next) {
+  fs.readFile('teewon/scss/web-variables.scss', 'utf-8', (e, data) => {
     const result = scss.compileTemplate(data)
     res.send(JSON.stringify(result))
   })
 })
 
-// 处理所有markdown文件
-router.get('/getMarkdown', function (req, res, next) {
-  fs.readFile(`examples/docs/${req.query.name}.md`, 'utf-8', (e, data) => {
-    res.send(markdown(data))
+// 处理所有的组件文档
+router.get('/api/docs/:type/:name', function (req, res, next) {
+  const name = req.params.name
+  let filePath = ''
+
+  if (req.params.type === 'guid') {
+    filePath = `docs/guides`
+  } else if (req.params.type === 'css') {
+    filePath = `teewon/apps/web/src/static/style/modules/${name}`
+  } else if (req.params.type === 'comps') {
+    filePath = `teewon/apps/web/src/assemblies/components/${name}`
+  }
+
+  fs.readFile(`${filePath}/${name}.md`, 'utf-8', (e, data) => {
+    res.send(markdown(data, filePath, name, req.params.type))
   })
 })
 
 // 处理css请求
-router.post('/css', function (req, res, next) {
-  const scssContent = scss.createScss(req.body) + fs.readFileSync('www/static/css/main.scss')
+router.post('/api/css', function (req, res, next) {
+  const scssContent = scss.createScss(req.body) + fs.readFileSync('src/static/style/main.scss')
 
   sass.render({
     data: scssContent,
-    includePaths: ['www/static/css/'],
+    includePaths: [
+      'src/static/style',
+      'src//assemblies/components',
+      'src/static/style/modules'
+    ],
     outputStyle: 'compressed'
   }, function (e, result) {
     if (e) {

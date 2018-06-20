@@ -1,0 +1,95 @@
+/** ---------------------------------------------------------------------
+ ** 描述：scss模板
+ ** --------------------------------------------------------------------- */
+
+/* ------------------------------ 全局配置 ------------------------------ */
+/* 应用类型{String} */
+$app-type: web; // [前台样式:web, 后台样式:admin, 移动端样式:mobile]
+
+/* ------------------------------ 颜色体系 ------------------------------ */
+/* 主题色{Color+} */
+$color-main: #26a8ff; // 主色
+$color-main-hover: #12a0ff; // 主色:滑过
+$color-main-active: #0097fc; // 主色:激活
+$color-secondary: #6ec940; // 辅色
+$color-secondary-hover: #ebb000; // 辅色:滑过
+$color-secondary-active: #d6a000; // 辅色:激活
+$color-weaking: #fff; // 弱化色
+
+/* 背景色{Color+} */
+$color-bg-body:#f5f5f5; // 页面背景
+$color-bg-footer: #afb9c9; // 页脚背景
+$color-bg-disabled: #eee; // 禁用背景
+
+/* 标识色{Color+} */
+$color-success:#78cf70; // 成功
+$color-warning:#ffb555; // 警告
+$color-error:#ff6c60; // 错误
+
+/* 文本色{Color+} */
+$color-text-main:#333; // 主文本
+$color-text-secondary:#666; // 辅助文本
+$color-text-weaking:#999; // 弱化文本
+$color-text-disabled:#ccc; // 禁用文本
+$color-text-highlight:#479025; // 高亮文本
+$color-text-error:#f00; // 错误文本
+$color-text-inverse: #fff; // 反转文本
+$color-text-link:#26a8ff; // 链接色
+$color-text-link-hover: #12a0ff; // 链接滑过色
+$color-text-placeholder: #999; // 占位文本
+
+/* 边框色{Color+} */
+$color-border-main:#ccc; // 主边框
+$color-border-secondary:#ddd; // 辅边框
+$color-border-disabled:#eee; // 禁用边框
+$color-border-weaking:#eee; // 弱化边框
+
+/* ------------------------------ 字体体系 ------------------------------ */
+/* 字体{NoChange} */
+$font-family-default: "Helvetica Neue", "Microsoft YaHei", "\5b8b\4f53", Arial, Helvetica, sans-serif; // 字体
+
+/* 字体尺寸{FontSize+} */
+$font-size-small: 12px; // 小字号
+$font-size-default: 14px; // 默认字号
+$font-size-medium: 16px; // 中字号
+$font-size-large: 20px; // 大字号
+
+/* ------------------------------ 间距体系 ------------------------------ */
+/* 行高{NoChange} */
+$line-height-default: 1.5; // 行高
+
+/* 外边距{Spacing+} */
+$spacing-step: 5px; // 间距步长
+$spacing-tiny: 10px; // 超小间距
+$spacing-small: 15px; // 小间距
+$spacing-medium: 20px; // 中间距
+$spacing-large: 30px; // 大间距
+$spacing-huge: 40px; // 超大间距
+
+/* ------------------------------ 尺寸体系 ------------------------------ */
+/* 控件高度{String+} */
+$ctr-height-step: 6px; // 高度步长
+$ctr-height-default: 30px; // 默认高度
+$ctr-height-small: 24px; // 小高度
+$ctr-height-medium: 36px; // 中高度
+$ctr-height-large: 42px; // 大高度
+
+/* 控件宽度{String+} */
+$ctr-width-step: 40px; // 宽度步长
+$ctr-width-default: 160px; // 默认高度
+$ctr-width-small: 120px; // 小宽度
+$ctr-width-medium: 200px; // 中宽度
+$ctr-width-large: 240px; // 大宽度
+
+/* ------------------------------ 响应式体系 ------------------------------ */
+/* 响应式断点{NoChange} */
+$media-breakpoints: ( pc: 1200px, lpad: 992px, pad: 768px, lphone: 554px, phone: 0); // 媒体查询断点
+$container-widths: ( pc:1200px,  lpad:960px,  pad:auto,  lphone:auto,  phone:auto); // 主容器宽度
+
+/* 栅格{String} */
+$grid-columns: 12; // 栅格数量
+$grid-gutter-width: 20px; // 栅格宽度
+
+/* ------------------------------ 过渡效果 ------------------------------ */
+/* 过渡时间{String} */
+$time: .12s; // 过渡时间

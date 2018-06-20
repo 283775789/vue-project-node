@@ -1,16 +1,41 @@
 // 生成快捷输入键
+const type = 'web'
 const fs = require('fs')
-const demoDir = 'examples/demo/'
+const glob = require('glob')
 const shortcuts = {}
 
-fs.readdir(demoDir, function (e, files) {
-  files.forEach((filename, index) => {
+let dirs = []
+
+if (type === 'web') {
+  dirs = [
+    'teewon/apps/web/src/static/style/modules/**/*.vue',
+    'teewon/apps/web/src/assemblies/components/**/demo/*.vue'
+  ]
+} else if (type === 'mobile') {
+  dirs = [
+    'teewon/apps/mobile/src/static/style/modules/**/*.vue',
+    'teewon/apps/mobile/src/assemblies/components/**/demo/*.vue'
+  ]
+}
+
+function generateShortcut (files) {
+  files.forEach((file, index) => {
     let n = 1
 
-    const data = fs.readFileSync(demoDir + filename, 'utf-8')
-    const prefix = 'tw-' + filename.replace(/.vue$/, '')
+    const dataRows = fs.readFileSync(file, 'utf-8').split('\n')
+    const prefix = 'tw-' + /([-_\w]*).vue/.exec(file)[1]
 
-    let result = data.replace(/(^<\/?template.*\n)|(^\s*name:.*\n)|(^\s\s)/gm, '')
+    const resultCode = []
+    for (let i = 0; i < dataRows.length; i++) {
+      // 去除style的内容
+      if (/<style\s+lang/.test(dataRows[i])) break
+      // 去除demo的template标签
+      if (/(^<template)|(^<\/template)/.test(dataRows[i])) continue
+
+      resultCode.push(dataRows[i])
+    }
+
+    let result = resultCode.join('\n')
 
     // 光标定位到标签内容区
     result = result.replace(/>([^<>\n]+?)</gm, function (m, p1) {
@@ -33,9 +58,17 @@ fs.readdir(demoDir, function (e, files) {
     }
   })
 
-  fs.writeFile('examples/config/vue-html.json', JSON.stringify(shortcuts), 'utf-8', function (e) {
+  fs.writeFile('teewon/shortcut/vue-html.json', JSON.stringify(shortcuts), 'utf-8', function (e) {
     if (e) {
       console.log(e)
     }
   })
+}
+
+let files = []
+
+dirs.forEach(dir => {
+  files = files.concat(glob.sync(dir))
 })
+
+generateShortcut(files)
