@@ -89,6 +89,7 @@ $ctr-height-large: $ctr-height-default + $ctr-height-step * 2 !default; // 大�
 
 /* 控件宽度 */
 $ctr-width-step: 40px !default; // 宽度步长
+$ctr-width-default: 100% !default; // 默认宽度
 $ctr-width-tiny: $ctr-width-step * 2 !default; // 超小宽度
 $ctr-width-small: $ctr-width-step * 3 !default; // 小宽度
 $ctr-width-medium: $ctr-width-step * 4 !default; // 中宽度
