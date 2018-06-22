@@ -11,6 +11,12 @@ router.get('/', function (req, res, next) {
   res.sendfile(path.join(__dirname, '../www/main.html'))
 })
 
+// 获取开发组成员
+router.get('/api/developers', function (req, res, next) {
+  const developers = require('../data/common/developers.json')
+  res.send(JSON.stringify(developers))
+})
+
 // 处理scss变量模板
 router.get('/api/scss-vars', function (req, res, next) {
   fs.readFile('teewon/scss/web-variables.scss', 'utf-8', (e, data) => {
