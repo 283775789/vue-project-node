@@ -41,141 +41,32 @@
 /* 过渡时间{String} */
 /* ---------------------------- 响应式mixin -------------------------------- */
 /* ---------------------------- 工具类mixin -------------------------------- */
-/* 盒模型 */
-.d-none {
-  display: none !important; }
+/* 浮动 */
+.clear-float:after {
+  content: " ";
+  display: block;
+  clear: both; }
 
-.d-inline {
-  display: inline !important; }
+.float-left {
+  float: left !important; }
 
-.d-inline-block {
-  display: inline-block !important; }
+.float-right {
+  float: right !important; }
 
-.d-block {
-  display: block !important; }
-
-.d-table {
-  display: table !important; }
-
-.d-table-row {
-  display: table-row !important; }
-
-.d-table-cell {
-  display: table-cell !important; }
-
-.d-flex {
-  display: flex !important; }
-
-.d-inline-flex {
-  display: inline-flex !important; }
+.float-none {
+  float: none !important; }
 
 @media (max-width: 1199px) {
-  .d-none-lpad {
-    display: none !important; }
-
-  .d-inline-lpad {
-    display: inline !important; }
-
-  .d-inline-block-lpad {
-    display: inline-block !important; }
-
-  .d-block-lpad {
-    display: block !important; }
-
-  .d-table-lpad {
-    display: table !important; }
-
-  .d-table-row-lpad {
-    display: table-row !important; }
-
-  .d-table-cell-lpad {
-    display: table-cell !important; }
-
-  .d-flex-lpad {
-    display: flex !important; }
-
-  .d-inline-flex-lpad {
-    display: inline-flex !important; } }
+  .float-none-lpad {
+    float: none !important; } }
 @media (max-width: 991px) {
-  .d-none-pad {
-    display: none !important; }
-
-  .d-inline-pad {
-    display: inline !important; }
-
-  .d-inline-block-pad {
-    display: inline-block !important; }
-
-  .d-block-pad {
-    display: block !important; }
-
-  .d-table-pad {
-    display: table !important; }
-
-  .d-table-row-pad {
-    display: table-row !important; }
-
-  .d-table-cell-pad {
-    display: table-cell !important; }
-
-  .d-flex-pad {
-    display: flex !important; }
-
-  .d-inline-flex-pad {
-    display: inline-flex !important; } }
+  .float-none-pad {
+    float: none !important; } }
 @media (max-width: 767px) {
-  .d-none-lphone {
-    display: none !important; }
-
-  .d-inline-lphone {
-    display: inline !important; }
-
-  .d-inline-block-lphone {
-    display: inline-block !important; }
-
-  .d-block-lphone {
-    display: block !important; }
-
-  .d-table-lphone {
-    display: table !important; }
-
-  .d-table-row-lphone {
-    display: table-row !important; }
-
-  .d-table-cell-lphone {
-    display: table-cell !important; }
-
-  .d-flex-lphone {
-    display: flex !important; }
-
-  .d-inline-flex-lphone {
-    display: inline-flex !important; } }
+  .float-none-lphone {
+    float: none !important; } }
 @media (max-width: 553px) {
-  .d-none-phone {
-    display: none !important; }
-
-  .d-inline-phone {
-    display: inline !important; }
-
-  .d-inline-block-phone {
-    display: inline-block !important; }
-
-  .d-block-phone {
-    display: block !important; }
-
-  .d-table-phone {
-    display: table !important; }
-
-  .d-table-row-phone {
-    display: table-row !important; }
-
-  .d-table-cell-phone {
-    display: table-cell !important; }
-
-  .d-flex-phone {
-    display: flex !important; }
-
-  .d-inline-flex-phone {
-    display: inline-flex !important; } }
+  .float-none-phone {
+    float: none !important; } }
 
 /*# sourceMappingURL=test.css.map */
